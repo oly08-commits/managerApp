@@ -8,19 +8,17 @@ import NewProject from "./components/pages/NewProject";
 function App() {
   return (
     <Router>
-      <ul>
-        <li>
-          <Link to="/">Home</Link>
-        </li>
-        <li>
-          <Link to="/contact">Contato</Link>
-        </li>
-      </ul>
+      <div>
+        <Link to="/">Home</Link>
+        <Link to="/contact">Contato</Link>
+        <Link to="/newProject">Novo Projeto</Link>
+        <Link to="/about">Sobre</Link>
+      </div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
-        <Route path="/NewProject" element={<NewProject />} />
+        <Route path="/newProject" element={<NewProject />} />
       </Routes>
       <p>Footer</p>
     </Router>
