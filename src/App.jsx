@@ -5,6 +5,8 @@ import Contact from "./components/pages/Contact";
 import About from "./components/pages/About";
 import NewProject from "./components/pages/NewProject";
 
+import Container from "./components/layout/Container";
+
 function App() {
   return (
     <Router>
@@ -14,12 +16,14 @@ function App() {
         <Link to="/newProject">Novo Projeto</Link>
         <Link to="/about">Sobre</Link>
       </div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/about" element={<About />} />
-        <Route path="/contact" element={<Contact />} />
-        <Route path="/newProject" element={<NewProject />} />
-      </Routes>
+      <Container customClass="min_height">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/newProject" element={<NewProject />} />
+        </Routes>
+      </Container>
       <p>Footer</p>
     </Router>
   );
