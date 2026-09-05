@@ -9,7 +9,10 @@ function Home() {
       <h1>
         Bem-vindo ao <span>managerApp</span>
       </h1>
-      <p>Comece a gerenciar os seus projecto aqui, não perca mais tempo!</p>
+      <p>
+        Crie os seus projecto e comece a gerenciá-los aqui, não perca mais
+        tempo!
+      </p>
       <LinkButton to="/newProject" text="Criar Projecto" />
       <img src={savings} alt="managerApp" />
     </section>
