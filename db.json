@@ -1,0 +1,37 @@
+{
+  "projects": [],
+  "categories": [
+    {
+      "id": 1,
+      "name": "Planejamento"
+    },
+    {
+      "id": 2,
+      "name": "Design"
+    },
+    {
+      "id": 3,
+      "name": "Análise de Requisitos"
+    },
+    {
+      "id": 4,
+      "name": "Arquitetura & Infraestrutura"
+    },
+    {
+      "id": 5,
+      "name": "Desenvolvimento"
+    },
+    {
+      "id": 6,
+      "name": "QA/Testes"
+    },
+    {
+      "id": 7,
+      "name": "Lançamento/Implantação"
+    },
+    {
+      "id": 8,
+      "name": "Suporte & Evolução"
+    }
+  ]
+}
