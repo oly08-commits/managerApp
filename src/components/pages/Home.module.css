@@ -1,0 +1,36 @@
+.home_container {
+  width: 100vw;
+  padding: 4em;
+  background-color: #111111;
+  color: #dc143c;
+
+  /* background-image: url(../../img/savings.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100vh; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.home_container h1 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.home_container h1 span {
+  color: #fb3;
+  padding: 0 0.2em;
+  background-color: #00000057;
+}
+
+.home_container p {
+  margin-bottom: 1.5em;
+}
+
+.home_container img {
+  width: 400px;
+  margin: 2em 0;
+}

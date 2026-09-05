@@ -1,7 +1,12 @@
 .navbar {
   display: flex;
   justify-content: space-between;
-  padding: 1em;
+  padding: 0.5em 1em 0.1em 1em;
+  background-color: #070707;
+}
+
+.navbar img {
+  height: 3em;
 }
 
 .list {
