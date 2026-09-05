@@ -19,10 +19,10 @@ function Navbar({ Link }) {
             <Link to="/projects">Projectos</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/contact">Contacto</Link>
+            <Link to="/about">Sobre</Link>
           </li>
           <li className={styles.item}>
-            <Link to="/about">Sobre</Link>
+            <Link to="/contact">Contacto</Link>
           </li>
         </ul>
       </Container>
