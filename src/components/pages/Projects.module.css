@@ -1,0 +1,20 @@
+.project_container {
+  width: 100vw;
+  min-width: 450px;
+  padding: 3em;
+  margin: 0;
+  background-color: #111111;
+  color: #dc143c;
+}
+
+.project_title {
+  margin-bottom: 2em;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.project_container p {
+  margin-bottom: 1.5em;
+  color: #fb3;
+}
