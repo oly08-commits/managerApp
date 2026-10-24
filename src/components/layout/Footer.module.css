@@ -8,6 +8,7 @@
 .social_list {
   display: flex;
   justify-content: center;
+
   list-style-type: none;
 }
 
@@ -29,7 +30,20 @@
   margin-top: 2em;
 }
 
+.copy_rightLink {
+  text-decoration: none;
+}
+
+.copy_rightLink span {
+  transition: 0.25s;
+}
+
+.copy_rightLink span:hover {
+  color: #565252;
+}
+
 .copy_right span {
   font-weight: bold;
   color: #fb3;
+  cursor: pointer;
 }

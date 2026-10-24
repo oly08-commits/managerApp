@@ -1,13 +1,38 @@
 .newProject_container {
-  width: 500px;
-  margin: 0 auto;
-  padding: 3em;
+  width: 100vw;
+  padding: 4em;
+  background-color: #111111;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .newProject_container h1 {
+  text-align: center;
   margin-bottom: 0.5em;
 }
 
 .newProject_container p {
+  box-sizing: border-box;
+  text-align: center;
   color: #fb3;
+}
+
+@media (max-width: 600px) {
+  .newProject_container {
+    width: 565px;
+  }
+  @media (max-width: 450px) {
+    .newProject_container {
+      width: 430px;
+    }
+
+    @media (max-width: 375px) {
+      .newProject_container {
+        width: 370px;
+      }
+    }
+  }
 }

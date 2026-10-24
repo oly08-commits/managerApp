@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 import {
   FaFacebook,
   FaInstagram,
@@ -8,6 +10,7 @@ import {
 import styles from "./Footer.module.css";
 
 function Footer() {
+  function click(e) {}
   return (
     <footer className={styles.footer}>
       <ul className={styles.social_list}>
@@ -25,7 +28,10 @@ function Footer() {
         </li>
       </ul>
       <p className={styles.copy_right}>
-        <span>managerApp</span> &copy; 2026
+        <Link className={styles.copy_rightLink} to="/">
+          <span>managerApp</span>
+        </Link>{" "}
+        &copy; 2026
       </p>
     </footer>
   );

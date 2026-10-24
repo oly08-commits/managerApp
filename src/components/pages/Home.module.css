@@ -1,6 +1,9 @@
 .home_container {
+  text-align: center;
   width: 100vw;
+  min-width: 450px;
   padding: 4em;
+  margin: 0;
   background-color: #111111;
   color: #dc143c;
 

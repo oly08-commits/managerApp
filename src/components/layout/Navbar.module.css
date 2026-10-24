@@ -3,11 +3,12 @@
     transform: rotate(0);
   }
   100% {
-    transform: rotate(360);
+    transform: rotate(360deg);
   }
 }
 
 .navbar {
+  width: 100vw;
   display: flex;
   justify-content: space-between;
   padding: 0.5em 1em 0.1em 1em;
@@ -16,6 +17,12 @@
 
 .navbar img {
   height: 3em;
+  animation: girar 5s linear infinite;
+  transition: 0.05s height;
+}
+
+.navbar img:active {
+  height: 2.5em;
 }
 
 .list {
@@ -36,4 +43,22 @@
 
 .item a:hover {
   color: #fb3;
+}
+
+@media (max-width: 600px) {
+  .navbar {
+    width: 100vw;
+  }
+  @media (max-width: 450px) {
+    .navbar {
+      width: 100vw;
+    }
+
+    @media (max-width: 375px) {
+      .navbar {
+        width: 100vw;
+        padding: 0.6em 0.12em 0.012em 0.12em;
+      }
+    }
+  }
 }

@@ -11,3 +11,8 @@
 .btn:hover {
   color: #fb3;
 }
+
+.flex {
+  display: flex;
+  justify-content: center;
+}

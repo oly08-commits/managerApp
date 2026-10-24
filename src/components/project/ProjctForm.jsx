@@ -47,6 +47,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
   return (
     <form onSubmit={submit} className={styles.form}>
       <Input
+        className={styles.form}
         type="text"
         text="Nome do Projeto"
         name="name"
@@ -55,6 +56,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         value={project.name ? project.name : ""}
       />
       <Input
+        className={styles.form}
         type="number"
         text="Orçamento do Projeto"
         name="budget"
@@ -63,6 +65,7 @@ function ProjectForm({ handleSubmit, btnText, projectData }) {
         value={project.budget ? project.budget : ""}
       />
       <Select
+        className={styles.form}
         name="category_id"
         text="Selecione a categoria"
         options={categories}

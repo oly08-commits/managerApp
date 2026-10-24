@@ -2,7 +2,7 @@ import Container from "./Container";
 
 import styles from "./Navbar.module.css";
 
-import logo from "../../img/costs_logo.png";
+import logo from "../../img/managerapp_logo.png";
 
 function Navbar({ Link }) {
   return (

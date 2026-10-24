@@ -8,7 +8,33 @@
 html,
 body,
 #root {
-  background-color: #111111;
+  overflow-x: hidden;
+  scrollbar-width: none;
   height: 100%;
+  background-color: #111111;
   color: #dc143c;
+  width: 100vw;
+}
+
+@media (max-width: 600px) {
+  html,
+  body,
+  #root {
+    width: 565px;
+  }
+  @media (max-width: 450px) {
+    html,
+    body,
+    #root {
+      width: 430px;
+    }
+
+    @media (max-width: 375px) {
+      .html,
+      body,
+      #root {
+        width: 370px;
+      }
+    }
+  }
 }
