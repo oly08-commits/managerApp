@@ -1,0 +1,115 @@
+.project_card {
+  padding: 0.5em;
+  border-radius: 6px;
+  background-color: #070707;
+  width: 24%;
+  min-width: 13em;
+  min-height: 15em;
+  margin: 0.25em;
+
+  display: grid;
+  grid-template-columns: repeat(1f, 4);
+}
+
+.project_card h4 {
+  background-color: #111;
+  text-align: center;
+  padding: 0.4em;
+  margin-bottom: 1em;
+  font-size: 1.2em;
+  border-radius: 4px;
+}
+
+.project_card p {
+  text-align: center;
+  color: #ccc;
+  margin-bottom: 1em;
+}
+
+.project_card p span {
+  font-weight: bold;
+}
+
+.category_text {
+  font-weight: 500;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category_text span {
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background-color: #111;
+  margin-right: 10px;
+}
+
+.category_text .planejamento {
+  background-color: #64748b;
+}
+
+.category_text .design {
+  background-color: #8b5cf6;
+}
+
+.category_text .analisarrequisitos {
+  background-color: #0891b2;
+}
+
+.category_text .infraestrutura {
+  background-color: #475569;
+}
+
+.category_text .desenvolvimento {
+  background-color: #2563eb;
+}
+
+.category_text .testes {
+  background-color: #d97706;
+}
+
+.category_text .lançamento {
+  background-color: #16a34a;
+}
+
+.category_text .suporte {
+  background-color: #db2777;
+}
+
+.project_card_actions {
+  margin-top: 1.2em;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.project_card_actions a,
+.project_card_actions button {
+  text-decoration: none;
+  border: none;
+  border-radius: 5px;
+  background-color: #101010;
+  color: #ccc;
+  font-size: 0.9em;
+  padding: 0.6em 1em;
+  margin-right: 0.3em;
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project_card_actions a:hover,
+.project_card_actions button:hover {
+  color: #dc143c;
+}
+
+.project_card_actions a:active,
+.project_card_actions button:active {
+  transform: scale(0.8);
+}

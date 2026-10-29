@@ -1,70 +1,92 @@
 {
   "projects": [
     {
-      "name": "oli",
-      "budget": "544",
+      "name": "Planejamento",
+      "budget": "500",
       "category": {
-        "id": "7",
-        "name": "Lançamento/Implantação"
+        "id": "1",
+        "name": "Planejamento"
       },
       "cost": 0,
       "services": [],
-      "id": "LM8ALUABUrw"
+      "id": "C7nP7S0ChlQ"
     },
     {
-      "name": "oli",
-      "budget": "544",
+      "name": "Design",
+      "budget": "1000",
       "category": {
-        "id": "7",
-        "name": "Lançamento/Implantação"
+        "id": "2",
+        "name": "Design"
       },
       "cost": 0,
       "services": [],
-      "id": "gknWgPnAuxc"
+      "id": "va6kyd4j7sI"
     },
     {
-      "name": "oli",
-      "budget": "544",
+      "category": {
+        "id": "3",
+        "name": "AnalisarRequisitos"
+      },
+      "name": "Análise de Requisitos ",
+      "budget": "1500",
+      "cost": 0,
+      "services": [],
+      "id": "V_4zHv3YfEA"
+    },
+    {
+      "category": {
+        "id": "4",
+        "name": "Infraestrutura"
+      },
+      "name": "Infraestrutura ",
+      "budget": "2000",
+      "cost": 0,
+      "services": [],
+      "id": "M53r3n1Bk6c"
+    },
+    {
       "category": {
         "id": "5",
         "name": "Desenvolvimento"
       },
+      "name": "Desenvolvimento",
+      "budget": "2500",
       "cost": 0,
       "services": [],
-      "id": "U-6wkHUHdjc"
+      "id": "GMhKdTn7irc"
     },
     {
-      "name": "oli",
-      "budget": "544",
       "category": {
         "id": "6",
-        "name": "QA/Testes"
+        "name": "Testes"
       },
+      "name": "Testes",
+      "budget": "3000",
       "cost": 0,
       "services": [],
-      "id": "SxrHPkX0sc8"
+      "id": "EcyDCG9a9u8"
     },
     {
-      "name": "oli",
-      "budget": "544",
-      "category": {
-        "id": "6",
-        "name": "QA/Testes"
-      },
-      "cost": 0,
-      "services": [],
-      "id": "E3U9zc8JO5g"
-    },
-    {
-      "name": "oli",
-      "budget": "544",
       "category": {
         "id": "7",
-        "name": "Lançamento/Implantação"
+        "name": "Lançamento"
       },
+      "name": "Lançamento ",
+      "budget": "3500",
       "cost": 0,
       "services": [],
-      "id": "9sPQlfDGE4s"
+      "id": "5WvkP1uo95I"
+    },
+    {
+      "category": {
+        "id": "8",
+        "name": "Suporte"
+      },
+      "name": "Suporte",
+      "budget": "4000",
+      "cost": 0,
+      "services": [],
+      "id": "mgK7pxzM0gk"
     }
   ],
   "categories": [
@@ -78,11 +100,11 @@
     },
     {
       "id": "3",
-      "name": "Análise de Requisitos"
+      "name": "AnalisarRequisitos"
     },
     {
       "id": "4",
-      "name": "Arquitetura & Infraestrutura"
+      "name": "Infraestrutura"
     },
     {
       "id": "5",
@@ -90,15 +112,15 @@
     },
     {
       "id": "6",
-      "name": "QA/Testes"
+      "name": "Testes"
     },
     {
       "id": "7",
-      "name": "Lançamento/Implantação"
+      "name": "Lançamento"
     },
     {
       "id": "8",
-      "name": "Suporte & Evolução"
+      "name": "Suporte"
     }
   ],
   "$schema": "./node_modules/json-server/schema.json"
