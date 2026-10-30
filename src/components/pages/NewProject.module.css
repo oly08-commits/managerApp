@@ -12,12 +12,12 @@
 .newProject_container h1 {
   text-align: center;
   margin-bottom: 0.5em;
+  color: #fb3;
 }
 
 .newProject_container p {
   box-sizing: border-box;
   text-align: center;
-  color: #fb3;
 }
 
 @media (max-width: 600px) {
