@@ -12,17 +12,6 @@
       "id": "C7nP7S0ChlQ"
     },
     {
-      "name": "Design",
-      "budget": "1000",
-      "category": {
-        "id": "2",
-        "name": "Design"
-      },
-      "cost": 0,
-      "services": [],
-      "id": "va6kyd4j7sI"
-    },
-    {
       "category": {
         "id": "3",
         "name": "AnalisarRequisitos"
@@ -87,6 +76,17 @@
       "cost": 0,
       "services": [],
       "id": "mgK7pxzM0gk"
+    },
+    {
+      "category": {
+        "id": "2",
+        "name": "Design"
+      },
+      "name": "Design",
+      "budget": "1000",
+      "cost": 0,
+      "services": [],
+      "id": "173mzFGGIVw"
     }
   ],
   "categories": [

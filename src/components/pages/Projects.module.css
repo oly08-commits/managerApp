@@ -4,7 +4,7 @@
   padding: 3em;
   margin: 0;
   background-color: #111111;
-  color: #dc143c;
+  color: #fb3;
 }
 
 .project_title {
@@ -16,5 +16,5 @@
 
 .project_container p {
   margin-bottom: 1.5em;
-  color: #fb3;
+  color: #ccc;
 }

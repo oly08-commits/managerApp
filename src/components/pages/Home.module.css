@@ -7,11 +7,6 @@
   background-color: #111111;
   color: #dc143c;
 
-  /* background-image: url(../../img/savings.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: 100vh; */
-
   display: flex;
   flex-direction: column;
   justify-content: center;

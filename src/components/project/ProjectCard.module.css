@@ -22,8 +22,6 @@
 
 .project_card p {
   text-align: center;
-  color: #ccc;
-  margin-bottom: 1em;
 }
 
 .project_card p span {
@@ -98,6 +96,7 @@
   padding: 0.6em 1em;
   margin-right: 0.3em;
   cursor: pointer;
+  transition: 0.2s color;
 
   display: flex;
   align-items: center;
@@ -106,7 +105,7 @@
 
 .project_card_actions a:hover,
 .project_card_actions button:hover {
-  color: #dc143c;
+  color: #fb3;
 }
 
 .project_card_actions a:active,
