@@ -1,0 +1,14 @@
+.loader_container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loader {
+  width: 60px;
+  color: #fb3;
+  background-color: transparent;
+}

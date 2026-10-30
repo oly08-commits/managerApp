@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 
 import Message from "../layout/Message";
 import Container from "../layout/Container";
+import Loading from "../layout/Loading";
 import LinkButton from "../layout/LinkButton";
 import ProjectCard from "../project/ProjectCard";
 
@@ -10,6 +11,7 @@ import styles from "./Projects.module.css";
 
 function Projects() {
   const [projects, setProjects] = useState([]);
+  const [removeLoading, setRemoveLoading] = useState(false);
 
   const location = useLocation();
 
@@ -20,24 +22,27 @@ function Projects() {
   }
 
   useEffect(() => {
-    fetch("http://localhost:5000/projects", {
-      method: "GET",
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((resp) => resp.json())
-      .then((data) => {
-        //console.log(data);
-        setProjects(data);
+    setTimeout(() => {
+      fetch("http://localhost:5000/projects", {
+        method: "GET",
+        headers: {
+          "Content-Type": "application/json",
+        },
       })
-      .catch((error) => console.log(error));
+        .then((resp) => resp.json())
+        .then((data) => {
+          //console.log(data);
+          setProjects(data);
+          setRemoveLoading(true);
+        })
+        .catch((error) => console.log(error));
+    }, 750);
   }, []);
 
   return (
     <div className={styles.project_container}>
       <div className={styles.project_title}>
-        <h1>Projectos Registrados</h1>
+        <h1>Projetos Registrados</h1>
         <LinkButton to="/newProject" text="Novo Projecto" />
       </div>
       {message && <Message msg={message} type="sucess" />}
@@ -52,6 +57,10 @@ function Projects() {
               category={project.category?.name}
             />
           ))}
+        {!removeLoading && <Loading />}
+        {removeLoading && projects.length === 0 && (
+          <p>Não há projetos registrados</p>
+        )}
       </Container>
     </div>
   );
