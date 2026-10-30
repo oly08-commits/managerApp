@@ -6,13 +6,13 @@ import styles from "./NewProject.module.css";
 
 function NewProject() {
   const navigate = useNavigate();
+  const url = "http://localhost:5000/projects";
 
   function createPost(project) {
-    //initialize cost and services
     project.cost = 0;
     project.services = [];
 
-    fetch("http://localhost:5000/projects", {
+    fetch(url, {
       method: "POST",
       headers: {
         "Content-type": "application/json",
