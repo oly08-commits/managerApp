@@ -15,7 +15,7 @@ function Message({ type, msg }) {
 
     const timer = setTimeout(() => {
       setVisible(false);
-    }, 2500);
+    }, 750);
 
     return () => clearTimeout(timer);
   }, [msg]);
