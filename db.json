@@ -87,6 +87,17 @@
       "cost": 0,
       "services": [],
       "id": "173mzFGGIVw"
+    },
+    {
+      "name": "testando",
+      "budget": "45000",
+      "category": {
+        "id": "6",
+        "name": "Testes"
+      },
+      "cost": 0,
+      "services": [],
+      "id": "4XqPU6p94QM"
     }
   ],
   "categories": [
