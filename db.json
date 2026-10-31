@@ -90,7 +90,7 @@
     },
     {
       "name": "testando",
-      "budget": "45000",
+      "budget": "4500",
       "category": {
         "id": "6",
         "name": "Testes"
