@@ -95,43 +95,25 @@
         "id": "6",
         "name": "Testes"
       },
-      "cost": 24000,
+      "cost": null,
       "services": [
         {
-          "name": "Testes",
-          "cost": "5000",
-          "description": "um serviço para testar validação",
-          "id": "a643f636-bc2c-46ca-94a6-5112d0c7f8ed"
-        },
-        {
-          "name": "Testes",
-          "cost": "5000",
-          "description": "um serviço para testar validação",
-          "id": "a643f636-bc2c-46ca-94a6-5112d0c7f8ed"
-        },
-        {
-          "name": "Testes",
-          "cost": "5000",
-          "description": "um serviço para testar validação",
-          "id": "a643f636-bc2c-46ca-94a6-5112d0c7f8ed"
-        },
-        {
-          "name": "Testes",
-          "cost": "5000",
-          "description": "um serviço para testar validação",
-          "id": "dadbaf05-655e-4192-ae3d-345fa448eb91"
-        },
-        {
           "name": "Contratar WEB designer ",
           "cost": "2000",
           "description": "Responsável para desenhar a interface das telas",
-          "id": "98d87a65-5b18-4c69-8b53-a20b155023b4"
+          "id": "13746b48-f042-453a-bdf0-f8b41869b299"
         },
         {
-          "name": "Contratar WEB designer ",
-          "cost": "2000",
-          "description": "Responsável para desenhar a interface das telas",
-          "id": "98d87a65-5b18-4c69-8b53-a20b155023b4"
+          "name": "testando",
+          "cost": "8000",
+          "description": "um serviço para testar validação",
+          "id": "9ba8249a-bc66-4860-a6ff-635a5461e47a"
+        },
+        {
+          "name": "testando",
+          "cost": "5025",
+          "description": "um serviço para testar validação",
+          "id": "b2163fa7-3d61-4640-93bd-f92dc19e7e66"
         }
       ],
       "id": "4XqPU6p94QM"

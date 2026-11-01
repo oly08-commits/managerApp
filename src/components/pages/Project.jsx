@@ -69,8 +69,11 @@ function Project() {
       .catch((error) => console.log(error));
   }
 
+  //console.log(project);
+
   function createService(project) {
     setMessage("");
+
     const lastService = project.services[project.services.length - 1];
 
     lastService.id = uuidv4();
@@ -78,6 +81,8 @@ function Project() {
     const lastServiceCost = lastService.cost;
 
     const newCost = parseFloat(project.cost) + parseFloat(lastServiceCost);
+
+    console.log(project);
 
     if (newCost > parseFloat(project.budget)) {
       setMessage("Orçamento ultrapassado, redefina o valor do serviço!");
@@ -98,6 +103,8 @@ function Project() {
       .then((resp) => resp.json())
       .then((data) => {
         setShowServiceForm(!showServiceForm);
+        setMessage("Serviço criado com sucesso!");
+        setMessageType("sucess");
       })
       .catch((error) => console.log(error));
   }
@@ -106,7 +113,33 @@ function Project() {
     setShowProjectForm(!showProjectForm);
   }
 
-  function removeService() {}
+  function removeService(id, cost) {
+    setMessage("");
+
+    const updatedServices = project.services.filter(
+      (service) => service.id !== id,
+    );
+    const updatedProject = project;
+
+    updatedProject.services = updatedServices;
+    updatedProject.cost = parseFloat(updatedProject.cost) - parseFloat(cost);
+
+    fetch(`http://localhost:5000/projects/${updatedProject.id}`, {
+      method: "PATCH",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(updatedProject),
+    })
+      .then((resp) => resp.json())
+      .then((data) => {
+        setProject(updatedProject);
+        setServices(updatedServices);
+        setMessage("Serviço removido com sucesso!");
+        setMessageType("sucess");
+      })
+      .catch((error) => console.log(error));
+  }
 
   function toggleServiceForm() {
     setShowServiceForm(!showServiceForm);
