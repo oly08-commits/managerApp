@@ -48,6 +48,10 @@
   color: #fb3;
 }
 
+.btn:active {
+  transform: scale(0.95);
+}
+
 .project_info {
   width: 100%;
 }

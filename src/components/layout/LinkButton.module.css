@@ -11,3 +11,7 @@
 .btn:hover {
   color: #fb3;
 }
+
+.btn:active {
+  transform: scale(0.95);
+}

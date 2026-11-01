@@ -95,7 +95,7 @@
         "id": "6",
         "name": "Testes"
       },
-      "cost": 20000,
+      "cost": 24000,
       "services": [
         {
           "name": "Testes",
@@ -120,6 +120,18 @@
           "cost": "5000",
           "description": "um serviço para testar validação",
           "id": "dadbaf05-655e-4192-ae3d-345fa448eb91"
+        },
+        {
+          "name": "Contratar WEB designer ",
+          "cost": "2000",
+          "description": "Responsável para desenhar a interface das telas",
+          "id": "98d87a65-5b18-4c69-8b53-a20b155023b4"
+        },
+        {
+          "name": "Contratar WEB designer ",
+          "cost": "2000",
+          "description": "Responsável para desenhar a interface das telas",
+          "id": "98d87a65-5b18-4c69-8b53-a20b155023b4"
         }
       ],
       "id": "4XqPU6p94QM"
